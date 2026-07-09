@@ -13,7 +13,8 @@ Static GitHub Pages website for Ossita kids furniture.
 
 ## Files
 
-- `index.html` is the single-page website.
+- `index.html` is the home page.
+- `pieces.html`, `rooms.html`, `collections.html`, `care.html`, and `help.html` are the top-level navigation pages.
 - `styles.css` contains all responsive styling.
 - `CNAME` configures the custom domain for GitHub Pages.
 - `assets/images/` contains generated website imagery for the hero and collection cards.
