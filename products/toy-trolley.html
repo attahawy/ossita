@@ -18,6 +18,7 @@
     <meta property="og:url" content="https://ossita.com/products/toy-trolley.html">
     <meta property="og:image" content="https://ossita.com/assets/images/ossita-storage.jpg">
     <link rel="canonical" href="https://ossita.com/products/toy-trolley.html">
+    <link rel="stylesheet" href="../assets/vendor/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="../styles.css">
   </head>
   <body class="product-page">
@@ -51,29 +52,25 @@
     </svg>
 
     <header class="site-header">
-      <div class="container site-header__inner">
-        <a class="brand" href="../index.html#top" aria-label="Ossita home">
-          <span class="brand-mark monogram-mark" aria-hidden="true">O</span>
-          <span class="brand-word">Ossita</span>
-        </a>
-        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
-          <span class="nav-toggle__icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Menu</span>
-        </button>
-        <nav id="primary-nav" class="site-nav" aria-label="Primary">
-          <a href="../pieces.html">Pieces</a>
-          <a href="../rooms.html">Rooms</a>
-          <a href="../collections.html">Collections</a>
-          <a href="../care.html">Care</a>
-          <a href="../help.html">Help</a>
-        </nav>
-        <div class="header-actions">
-          <a class="btn btn--ghost" href="../help.html">
-            <svg class="icon" aria-hidden="true"><use href="#ic-mail"></use></svg>
-            <span>Contact</span>
+      <nav class="navbar navbar-light" aria-label="Primary navigation">
+        <div class="container-fluid site-header__inner">
+          <a class="navbar-brand brand brand--center" href="../index.html#top" aria-label="Ossita home">
+            <span class="brand-mark monogram-mark" aria-hidden="true">O</span>
+            <span class="visually-hidden">Ossita</span>
           </a>
+          <div id="primary-nav" class="site-nav">
+            <ul class="navbar-nav site-nav__group site-nav__group--left mb-0">
+              <li class="nav-item"><a class="nav-link" href="../pieces.html">Pieces</a></li>
+              <li class="nav-item"><a class="nav-link" href="../rooms.html">Rooms</a></li>
+              <li class="nav-item"><a class="nav-link" href="../collections.html">Collections</a></li>
+            </ul>
+            <ul class="navbar-nav site-nav__group site-nav__group--right mb-0">
+              <li class="nav-item"><a class="nav-link" href="../care.html">Care</a></li>
+              <li class="nav-item"><a class="nav-link" href="../help.html">Help</a></li>
+            </ul>
+          </div>
         </div>
-      </div>
+      </nav>
     </header>
 
     <main id="top">
@@ -259,6 +256,7 @@
         </div>
       </div>
     </footer>
+    <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="../assets/js/site.js" defer></script>
   </body>
 </html>
