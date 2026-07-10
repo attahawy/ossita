@@ -6,13 +6,13 @@
     <title>Ossita Bookshelf</title>
     <meta
       name="description"
-      content="A low forward-facing Ossita bookshelf for visible covers, child-height access, and calm room planning."
+      content="A low, forward-facing Ossita bookshelf that keeps covers visible and books easy to reach in bedrooms and playrooms."
     >
     <meta name="theme-color" content="#f7f3ec">
     <meta property="og:title" content="Ossita Bookshelf">
     <meta
       property="og:description"
-      content="Forward-facing child-height book storage that keeps covers visible and easy to reach."
+      content="A low book display that keeps covers visible and encourages browsing."
     >
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://ossita.com/products/bookshelf.html">
@@ -21,166 +21,239 @@
     <link rel="stylesheet" href="../styles.css">
   </head>
   <body class="product-page">
-    <header class="site-header page-header" aria-label="Primary navigation">
-      <a class="brand" href="../index.html#top" aria-label="Ossita home">
-        <span class="brand-mark monogram-mark" aria-hidden="true">O</span>
-        <span class="brand-word">Ossita</span>
-      </a>
-      <nav class="site-nav" aria-label="Primary pages">
-        <a href="../pieces.html">Pieces</a>
-        <a href="../rooms.html">Rooms</a>
-        <a href="../collections.html">Collections</a>
-        <a href="../care.html">Care</a>
-        <a href="../help.html">Help</a>
-      </nav>
+    <svg class="icon-sprite" width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute">
+      <defs>
+        <symbol id="ic-leaf" viewBox="0 0 24 24"><path d="M4 20c9 1 15-4 15-15C10 4 4 10 4 20Z"/><path d="M4 20c2-6 5-9 11-11"/></symbol>
+        <symbol id="ic-sprout" viewBox="0 0 24 24"><path d="M12 21v-9"/><path d="M12 14c-1-4-4-5-8-5 0 4 3 6 8 5Z"/><path d="M12 12c1-4 4-6 8-5 0 4-3 6-8 5Z"/></symbol>
+        <symbol id="ic-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M12 7v5.2l3.4 2"/></symbol>
+        <symbol id="ic-shield" viewBox="0 0 24 24"><path d="M12 3l7 2.6v5.2c0 4.6-3 8-7 10.2-4-2.2-7-5.6-7-10.2V5.6Z"/><path d="M9 12l2.2 2.2L15.5 10"/></symbol>
+        <symbol id="ic-heart" viewBox="0 0 24 24"><path d="M12 20.5C6.5 16.8 4 13.4 4 9.9A3.9 3.9 0 0 1 12 7.4 3.9 3.9 0 0 1 20 9.9c0 3.5-2.5 6.9-8 10.6Z"/></symbol>
+        <symbol id="ic-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M3.5 12h17"/><path d="M12 3.5c2.5 2.4 3.8 5.4 3.8 8.5S14.5 18.1 12 20.5c-2.5-2.4-3.8-5.4-3.8-8.5S9.5 5.9 12 3.5Z"/></symbol>
+        <symbol id="ic-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2.6v2.4M12 19v2.4M4.6 4.6l1.7 1.7M17.7 17.7l1.7 1.7M2.6 12h2.4M19 12h2.4M4.6 19.4l1.7-1.7M17.7 6.3l1.7-1.7"/></symbol>
+        <symbol id="ic-cloud" viewBox="0 0 24 24"><path d="M7.5 18.5h9a3.8 3.8 0 0 0 .4-7.6 5.2 5.2 0 0 0-10-1.4A4 4 0 0 0 7.5 18.5Z"/></symbol>
+        <symbol id="ic-ruler" viewBox="0 0 24 24"><rect x="3" y="8" width="18" height="8" rx="1.6"/><path d="M7.5 8v3.2M12 8v4M16.5 8v3.2"/></symbol>
+        <symbol id="ic-bed" viewBox="0 0 24 24"><path d="M3 19v-8M3 15h18v4M21 19v-4a4 4 0 0 0-4-4H3"/><path d="M7 11V8.5A1.5 1.5 0 0 1 8.5 7h3A1.5 1.5 0 0 1 13 8.5V11"/></symbol>
+        <symbol id="ic-chair" viewBox="0 0 24 24"><path d="M8 12V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2"/><path d="M8 8.5h8"/><path d="M6.5 12h11l-1 8M6.5 12l1 8"/></symbol>
+        <symbol id="ic-tower" viewBox="0 0 24 24"><rect x="6" y="4" width="12" height="3.6" rx="1.2"/><path d="M7.6 7.6v12.4M16.4 7.6v12.4"/><path d="M7.2 13.5h9.6"/><path d="M4.5 20h15"/></symbol>
+        <symbol id="ic-book" viewBox="0 0 24 24"><path d="M12 6.5C10.5 5.2 8.7 4.8 6 4.8A1.2 1.2 0 0 0 4.8 6v11.4a1 1 0 0 0 1 1c2.5 0 4.6.4 6.2 1.6"/><path d="M12 6.5c1.5-1.3 3.3-1.7 6-1.7A1.2 1.2 0 0 1 19.2 6v11.4a1 1 0 0 1-1 1c-2.5 0-4.6.4-6.2 1.6"/><path d="M12 6.5v13.4"/></symbol>
+        <symbol id="ic-table" viewBox="0 0 24 24"><path d="M3.5 9.5h17"/><path d="M4.2 9.5c0-1.9 3.5-3 7.8-3s7.8 1.1 7.8 3"/><path d="M6.5 9.5v9M17.5 9.5v9"/></symbol>
+        <symbol id="ic-bench" viewBox="0 0 24 24"><path d="M4 9.5h16v9H4Z"/><path d="M4 9.5V7.5a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v2"/><path d="M12 9.5v9M4 14h16"/></symbol>
+        <symbol id="ic-trolley" viewBox="0 0 24 24"><path d="M4.5 7.5h15l-1.2 9.2a1 1 0 0 1-1 .9H6.7a1 1 0 0 1-1-.9Z"/><path d="M8 7.5v10M16 7.5v10"/><circle cx="8.5" cy="20" r="1.4"/><circle cx="15.5" cy="20" r="1.4"/></symbol>
+        <symbol id="ic-desk" viewBox="0 0 24 24"><path d="M3.5 8.5h17"/><path d="M5 8.5v11M19 8.5v11"/><rect x="12.5" y="8.5" width="6.5" height="6.6" rx="0.8"/><path d="M14.6 11.8h2.3"/><path d="M4 4.5h5.5v4H4Z"/></symbol>
+        <symbol id="ic-moon" viewBox="0 0 24 24"><path d="M20 13.5A8 8 0 0 1 10.5 4 8 8 0 1 0 20 13.5Z"/></symbol>
+        <symbol id="ic-pencil" viewBox="0 0 24 24"><path d="M4 20l1.2-4.2L16 5a2 2 0 0 1 3 3L8.2 18.8Z"/><path d="M14 7l3 3"/></symbol>
+        <symbol id="ic-blocks" viewBox="0 0 24 24"><rect x="3.5" y="12.5" width="7" height="7" rx="1.2"/><rect x="13.5" y="12.5" width="7" height="7" rx="1.2"/><path d="M8 12.5 11.5 5l3.5 7.5"/></symbol>
+        <symbol id="ic-mail" viewBox="0 0 24 24"><rect x="3" y="5.5" width="18" height="13" rx="2.5"/><path d="M4 7.5l8 5.5 8-5.5"/></symbol>
+        <symbol id="ic-arrow" viewBox="0 0 24 24"><path d="M4 12h15"/><path d="M13 6l6 6-6 6"/></symbol>
+        <symbol id="ic-arrow-left" viewBox="0 0 24 24"><path d="M20 12H5"/><path d="M11 6l-6 6 6 6"/></symbol>
+        <symbol id="ic-sparkle" viewBox="0 0 24 24"><path d="M12 3.5c.6 4.3 2.2 5.9 6.5 6.5-4.3.6-5.9 2.2-6.5 6.5-.6-4.3-2.2-5.9-6.5-6.5 4.3-.6 5.9-2.2 6.5-6.5Z"/></symbol>
+      </defs>
+    </svg>
+
+    <header class="site-header">
+      <div class="container site-header__inner">
+        <a class="brand" href="../index.html#top" aria-label="Ossita home">
+          <span class="brand-mark monogram-mark" aria-hidden="true">O</span>
+          <span class="brand-word">Ossita</span>
+        </a>
+        <nav class="site-nav" aria-label="Primary">
+          <a href="../pieces.html">Pieces</a>
+          <a href="../rooms.html">Rooms</a>
+          <a href="../collections.html">Collections</a>
+          <a href="../care.html">Care</a>
+          <a href="../help.html">Help</a>
+        </nav>
+        <div class="header-actions">
+          <a class="btn btn--ghost" href="../help.html">
+            <svg class="icon" aria-hidden="true"><use href="#ic-mail"></use></svg>
+            <span>Contact</span>
+          </a>
+        </div>
+      </div>
     </header>
 
-    <main class="product-main">
-      <section class="product-hero" aria-labelledby="product-title">
-        <div class="product-media">
-          <img
-            src="../assets/images/ossita-bookshelf.jpg"
-            width="1254"
-            height="1254"
-            alt="A low rounded wooden bookshelf with front-facing books and sage and clay storage bins."
-          >
-        </div>
-        <div class="product-summary">
-          <p class="board-label">Single piece</p>
-          <h1 id="product-title">Bookshelf</h1>
-          <p class="product-intro">
-            A low book display that keeps covers visible, encourages browsing, and belongs naturally in both bedrooms and playrooms.
-          </p>
-          <ul class="product-chip-list" aria-label="Bookshelf highlights">
-            <li>Reading</li>
-            <li>Child-height</li>
-            <li>Forward display</li>
-          </ul>
-          <div class="product-facts" aria-label="Bookshelf facts">
-            <div>
-              <p class="product-fact-label">Best for</p>
-              <p class="product-fact-value">Story corners, playrooms, and bedroom reading zones.</p>
-            </div>
-            <div>
-              <p class="product-fact-label">Access</p>
-              <p class="product-fact-value">Designed so books can be seen before they are pulled.</p>
-            </div>
-            <div>
-              <p class="product-fact-label">Materials</p>
-              <p class="product-fact-value">Warm wood surfaces with soft rounded edges.</p>
-            </div>
-            <div>
-              <p class="product-fact-label">Pairs with</p>
-              <p class="product-fact-value">Chair, low table, and newborn bed.</p>
-            </div>
+    <main id="top">
+      <section class="product-hero">
+        <div class="container product-hero__grid">
+          <div class="product-hero__media">
+            <img src="../assets/images/ossita-bookshelf.jpg" width="1254" height="1254" alt="A low rounded wooden bookshelf with front-facing books and sage and clay storage bins.">
+            <span class="product-hero__badge"><svg class="icon" aria-hidden="true"><use href="#ic-book"></use></svg>Reading &middot; BS-04</span>
           </div>
-          <div class="product-actions">
-            <a class="button button-primary" href="../pieces.html">Back to pieces</a>
-            <a class="button button-secondary" href="mailto:hello@ossita.com?subject=Ossita%20Bookshelf">
-              Ask about this piece
-            </a>
+          <div class="product-hero__panel">
+            <p class="kicker">Single piece</p>
+            <h1>Bookshelf</h1>
+            <p class="product-hero__lead">
+              A low book display that keeps covers visible, encourages browsing, and belongs naturally in both bedrooms and playrooms.
+            </p>
+            <ul class="chip-row" aria-label="Bookshelf highlights">
+              <li class="chip"><svg class="icon" aria-hidden="true"><use href="#ic-book"></use></svg>Reading</li>
+              <li class="chip"><svg class="icon" aria-hidden="true"><use href="#ic-ruler"></use></svg>Child-height</li>
+              <li class="chip"><svg class="icon" aria-hidden="true"><use href="#ic-sparkle"></use></svg>Forward display</li>
+            </ul>
+            <div class="spec-grid">
+              <div class="spec">
+                <span class="spec__icon"><svg class="icon" aria-hidden="true"><use href="#ic-sparkle"></use></svg></span>
+                <div><p class="spec__label">Best for</p><p class="spec__value">Story corners, playrooms, and bedroom reading zones.</p></div>
+              </div>
+              <div class="spec">
+                <span class="spec__icon"><svg class="icon" aria-hidden="true"><use href="#ic-book"></use></svg></span>
+                <div><p class="spec__label">Access</p><p class="spec__value">Designed so books can be seen before they are pulled.</p></div>
+              </div>
+              <div class="spec">
+                <span class="spec__icon"><svg class="icon" aria-hidden="true"><use href="#ic-leaf"></use></svg></span>
+                <div><p class="spec__label">Materials</p><p class="spec__value">Warm wood surfaces with soft rounded edges.</p></div>
+              </div>
+              <div class="spec">
+                <span class="spec__icon"><svg class="icon" aria-hidden="true"><use href="#ic-blocks"></use></svg></span>
+                <div><p class="spec__label">Pairs with</p><p class="spec__value">Chair, low table, and newborn bed.</p></div>
+              </div>
+            </div>
+            <div class="product-hero__cta">
+              <a class="btn btn--primary" href="mailto:hello@ossita.com?subject=Ossita%20Bookshelf">
+                <svg class="icon" aria-hidden="true"><use href="#ic-mail"></use></svg>Ask about this piece
+              </a>
+              <a class="btn btn--ghost" href="../pieces.html">
+                <svg class="icon" aria-hidden="true"><use href="#ic-arrow-left"></use></svg>Back to pieces
+              </a>
+            </div>
           </div>
         </div>
       </section>
 
       <section class="product-gallery" aria-label="Bookshelf image gallery">
-        <figure class="gallery-item">
-          <img
-            src="../assets/images/ossita-bookshelf.jpg"
-            width="1254"
-            height="1254"
-            alt="A low rounded wooden bookshelf with front-facing display shelves and storage bins."
-            loading="lazy"
-          >
-          <figcaption>Low storage for books, bins, and display.</figcaption>
-        </figure>
-        <figure class="gallery-item">
-          <img
-            src="../assets/images/ossita-hero.jpg"
-            width="1693"
-            height="929"
-            alt="A bright kids room with wall art, storage, and rounded wood furniture."
-            loading="lazy"
-          >
-          <figcaption>Reading storage planned within the full room.</figcaption>
-        </figure>
-        <figure class="gallery-item">
-          <img
-            src="../assets/images/ossita-study-desk.jpg"
-            width="920"
-            height="920"
-            alt="A compact study desk with books and small storage shelves."
-            loading="lazy"
-          >
-          <figcaption>Pairs with study and activity corners.</figcaption>
-        </figure>
+        <div class="container product-gallery__grid">
+          <figure class="product-figure">
+            <img src="../assets/images/ossita-bookshelf.jpg" width="1254" height="1254" alt="A low rounded wooden bookshelf with front-facing display shelves and storage bins." loading="lazy">
+            <figcaption>Low storage for books, bins, and display.</figcaption>
+          </figure>
+          <figure class="product-figure">
+            <img src="../assets/images/ossita-hero.jpg" width="1693" height="929" alt="A bright kids room with wall art, storage, and rounded wood furniture." loading="lazy">
+            <figcaption>Reading storage planned within the full room.</figcaption>
+          </figure>
+          <figure class="product-figure">
+            <img src="../assets/images/ossita-study-desk.jpg" width="920" height="920" alt="A compact study desk with books and small storage shelves." loading="lazy">
+            <figcaption>Pairs with study and activity corners.</figcaption>
+          </figure>
+        </div>
       </section>
 
-      <section class="product-layout" aria-label="Product details">
-        <article class="product-panel">
-          <p class="board-label">Overview</p>
-          <h2>Covers stay visible.</h2>
-          <p>
-            The bookshelf is planned around browsing, keeping titles forward enough that children can choose without digging.
-          </p>
-        </article>
-        <article class="product-panel">
-          <p class="board-label">Use</p>
-          <h2>Built for repetition.</h2>
-          <p>
-            It supports repeated resets throughout the day, so books can leave and return without turning into clutter.
-          </p>
-        </article>
-        <article class="product-panel">
-          <p class="board-label">Placement</p>
-          <h2>Works beyond reading.</h2>
-          <p>
-            It also handles small activity trays, paper sets, or display objects when a room needs flexible storage.
-          </p>
-        </article>
+      <section class="detail-section" aria-label="Product details">
+        <div class="container">
+          <div class="detail-grid">
+            <article class="detail">
+              <span class="detail__icon"><svg class="icon" aria-hidden="true"><use href="#ic-sparkle"></use></svg></span>
+              <p class="kicker">Overview</p>
+              <h3>Covers stay visible.</h3>
+              <p>The bookshelf is planned around browsing, keeping titles forward enough that children can choose without digging.</p>
+            </article>
+            <article class="detail">
+              <span class="detail__icon"><svg class="icon" aria-hidden="true"><use href="#ic-clock"></use></svg></span>
+              <p class="kicker">Use</p>
+              <h3>Built for repetition.</h3>
+              <p>It supports repeated resets throughout the day, so books can leave and return without turning into clutter.</p>
+            </article>
+            <article class="detail">
+              <span class="detail__icon"><svg class="icon" aria-hidden="true"><use href="#ic-ruler"></use></svg></span>
+              <p class="kicker">Placement</p>
+              <h3>Works beyond reading.</h3>
+              <p>It also handles small activity trays, paper sets, or display objects when a room needs flexible storage.</p>
+            </article>
+          </div>
+          <div class="note">
+            <span class="note__icon"><svg class="icon" aria-hidden="true"><use href="#ic-sparkle"></use></svg></span>
+            <div>
+              <p class="kicker">Catalogue note</p>
+              <p>The Bookshelf is treated as a visible-storage piece rather than a hidden-storage piece, so it works best where the room can support a curated display rhythm.</p>
+            </div>
+          </div>
+        </div>
       </section>
 
-      <section class="product-note">
-        <p class="board-label">Catalogue note</p>
-        <p>
-          The Bookshelf is treated as a visible-storage piece rather than a hidden-storage piece, so it works best where the room can support a curated display rhythm.
-        </p>
+      <section class="related" aria-labelledby="related-title">
+        <div class="container">
+          <div class="section__head">
+            <p class="eyebrow"><svg class="icon" aria-hidden="true"><use href="#ic-blocks"></use></svg>More pieces</p>
+            <h2 id="related-title" class="section__title">Continue through the range.</h2>
+            <p class="section__intro">Pieces often planned with reading and quiet-focus zones.</p>
+          </div>
+          <div class="related__grid">
+            <a class="related-card" href="chair.html">
+              <div class="related-card__media"><img src="../assets/images/ossita-chair.jpg" alt="A child-sized wooden chair." width="1254" height="1254" loading="lazy"></div>
+              <div class="related-card__body">
+                <h3>Chair</h3>
+                <p>Stable seating for reading corners and shared tables.</p>
+                <span class="related-card__link">View piece <svg class="icon" aria-hidden="true"><use href="#ic-arrow"></use></svg></span>
+              </div>
+            </a>
+            <a class="related-card" href="low-table.html">
+              <div class="related-card__media"><img src="../assets/images/ossita-low-table.jpg" alt="A rounded low activity table." width="1254" height="1254" loading="lazy"></div>
+              <div class="related-card__body">
+                <h3>Low table</h3>
+                <p>Shared surface for drawing and book-based activities.</p>
+                <span class="related-card__link">View piece <svg class="icon" aria-hidden="true"><use href="#ic-arrow"></use></svg></span>
+              </div>
+            </a>
+            <a class="related-card" href="newborn-bed.html">
+              <div class="related-card__media"><img src="../assets/images/ossita-newborn-bed.jpg" alt="A rounded newborn bed with storage drawers." width="1254" height="1254" loading="lazy"></div>
+              <div class="related-card__body">
+                <h3>Newborn bed</h3>
+                <p>A soft room anchor for early bedtime routines.</p>
+                <span class="related-card__link">View piece <svg class="icon" aria-hidden="true"><use href="#ic-arrow"></use></svg></span>
+              </div>
+            </a>
+          </div>
+        </div>
       </section>
 
-      <section class="product-related" aria-labelledby="related-title">
-        <p class="board-label">More pieces</p>
-        <h2 id="related-title">Continue through the range.</h2>
-        <p>Pieces often planned with reading and quiet-focus zones.</p>
-        <div class="related-grid">
-          <a class="related-card" href="chair.html">
-            <img src="../assets/images/ossita-chair.jpg" alt="" width="1254" height="1254" loading="lazy">
-            <h3>Chair</h3>
-            <p>Stable seating for reading corners and shared tables.</p>
-            <span class="related-link">View piece</span>
-          </a>
-          <a class="related-card" href="low-table.html">
-            <img src="../assets/images/ossita-low-table.jpg" alt="" width="1254" height="1254" loading="lazy">
-            <h3>Low table</h3>
-            <p>Shared surface for drawing and book-based activities.</p>
-            <span class="related-link">View piece</span>
-          </a>
-          <a class="related-card" href="newborn-bed.html">
-            <img src="../assets/images/ossita-newborn-bed.jpg" alt="" width="1254" height="1254" loading="lazy">
-            <h3>Newborn bed</h3>
-            <p>A soft room anchor for early bedtime routines.</p>
-            <span class="related-link">View piece</span>
-          </a>
+      <section class="assurances" aria-label="Ossita values">
+        <div class="container assurances__inner">
+          <span class="assurance"><svg class="icon" aria-hidden="true"><use href="#ic-leaf"></use></svg>Natural materials</span>
+          <span class="assurance"><svg class="icon" aria-hidden="true"><use href="#ic-sprout"></use></svg>Sustainably made</span>
+          <span class="assurance"><svg class="icon" aria-hidden="true"><use href="#ic-heart"></use></svg>Made with care</span>
+          <span class="assurance"><svg class="icon" aria-hidden="true"><use href="#ic-shield"></use></svg>Safe and non-toxic</span>
+          <span class="assurance"><svg class="icon" aria-hidden="true"><use href="#ic-globe"></use></svg>Better for our planet</span>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
-      <a class="footer-brand" href="../index.html#top" aria-label="Ossita home">
-        <span class="footer-mark monogram-mark" aria-hidden="true">O</span>
-        <span>Ossita</span>
-      </a>
-      <p>&copy; <span>2026</span> Ossita. Kids furniture crafted for childhood.</p>
-      <a href="../pieces.html">Back to pieces</a>
+      <div class="container">
+        <div class="site-footer__inner">
+          <div class="footer-brand">
+            <a class="footer-brand__logo" href="../index.html#top" aria-label="Ossita home">
+              <span class="brand-mark monogram-mark" aria-hidden="true">O</span>
+              <span>Ossita</span>
+            </a>
+            <p>Natural, sustainable, timeless kids furniture crafted for childhood and made to be handed down.</p>
+          </div>
+          <div class="footer-col">
+            <h4>Explore</h4>
+            <ul>
+              <li><a href="../pieces.html">Pieces</a></li>
+              <li><a href="../rooms.html">Rooms</a></li>
+              <li><a href="../collections.html">Collections</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Support</h4>
+            <ul>
+              <li><a href="../care.html">Care</a></li>
+              <li><a href="../help.html">Help</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Connect</h4>
+            <ul>
+              <li><a href="mailto:hello@ossita.com"><svg class="icon" aria-hidden="true"><use href="#ic-mail"></use></svg>hello@ossita.com</a></li>
+              <li><a href="../pieces.html"><svg class="icon" aria-hidden="true"><use href="#ic-arrow"></use></svg>Back to pieces</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; <span>2026</span> Ossita. Kids furniture crafted for childhood.</p>
+          <p>Natural &middot; Sustainable &middot; Timeless</p>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
