@@ -19,8 +19,8 @@ Make sure Apache has `AllowOverride` enabled for this project directory.
 ## Files
 
 - `index.html` is the home page.
-- `pieces.html`, `rooms.html`, `collections.html`, `care.html`, `help.html`, and `institutions.html` are the top-level navigation pages.
-- `pieces/`, `rooms/`, `collections/`, `care/`, `help/`, and `institutions/` provide the clean URLs for those pages.
+- `pieces.html`, `rooms.html`, `collections.html`, `care.html`, `help.html`, `institutions.html`, and `contact.html` are the top-level navigation pages.
+- `pieces/`, `rooms/`, `collections/`, `care/`, `help/`, `institutions/`, and `contact/` provide the clean URLs for those pages.
 - `products/<slug>/` provides clean URLs for product pages, while the matching `products/<slug>.html` files remain for old links.
 - `styles.css` contains all responsive styling.
 - `CNAME` configures the custom domain for GitHub Pages.
