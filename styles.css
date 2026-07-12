@@ -295,19 +295,13 @@ h4 {
 .site-header {
   position: relative;
   z-index: 20;
-  background: rgba(247, 243, 236, 0.82);
-  backdrop-filter: saturate(140%) blur(14px);
-  border-bottom: 1px solid transparent;
+  background: var(--paper);
+  border-bottom: 1px solid var(--line-strong);
   transition: border-color 0.2s ease, background-color 0.2s ease;
 }
 
 .site-header::after {
-  content: "";
-  position: absolute;
-  inset-inline: 0;
-  bottom: 0;
-  height: 1px;
-  background: linear-gradient(90deg, transparent, var(--line-strong) 20%, var(--line-strong) 80%, transparent);
+  content: none;
 }
 
 .site-header .navbar {
