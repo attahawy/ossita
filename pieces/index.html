@@ -102,8 +102,27 @@
               Each piece has its own page with room use, material notes, and nearby pieces in the range.
             </p>
           </div>
-          <div class="catalogue__grid">
-            <a class="piece-card" href="../products/newborn-bed/">
+          <div class="quick-sort" aria-label="Sort pieces">
+            <div class="quick-sort__group" aria-label="Room">
+              <span class="quick-sort__label">Room</span>
+              <button class="quick-sort__button is-active" type="button" data-filter-group="room" data-filter-value="all" aria-pressed="true">All</button>
+              <button class="quick-sort__button" type="button" data-filter-group="room" data-filter-value="nursery" aria-pressed="false">Nursery</button>
+              <button class="quick-sort__button" type="button" data-filter-group="room" data-filter-value="playroom" aria-pressed="false">Playroom</button>
+              <button class="quick-sort__button" type="button" data-filter-group="room" data-filter-value="study" aria-pressed="false">Study</button>
+              <button class="quick-sort__button" type="button" data-filter-group="room" data-filter-value="kitchen" aria-pressed="false">Kitchen</button>
+            </div>
+            <div class="quick-sort__group" aria-label="Age">
+              <span class="quick-sort__label">Age</span>
+              <button class="quick-sort__button is-active" type="button" data-filter-group="age" data-filter-value="all" aria-pressed="true">All</button>
+              <button class="quick-sort__button" type="button" data-filter-group="age" data-filter-value="baby" aria-pressed="false">0-12m</button>
+              <button class="quick-sort__button" type="button" data-filter-group="age" data-filter-value="toddler" aria-pressed="false">18m+</button>
+              <button class="quick-sort__button" type="button" data-filter-group="age" data-filter-value="preschool" aria-pressed="false">3+</button>
+              <button class="quick-sort__button" type="button" data-filter-group="age" data-filter-value="school" aria-pressed="false">5+</button>
+            </div>
+            <p class="quick-sort__count" aria-live="polite">Showing 8 pieces</p>
+          </div>
+          <div class="catalogue__grid" data-piece-grid>
+            <a class="piece-card" href="../products/newborn-bed/" data-rooms="nursery bedroom" data-ages="baby">
               <div class="piece-card__media">
                 <img src="../assets/images/ossita-newborn-bed.jpg" width="1254" height="1254" alt="A rounded light-wood newborn bed with sage drawer fronts." loading="lazy">
                 <span class="piece-card__badge"><svg class="icon" aria-hidden="true"><use href="#ic-bed"></use></svg></span>
@@ -116,7 +135,7 @@
                 <span class="piece-card__link">View piece <svg class="icon" aria-hidden="true"><use href="#ic-arrow"></use></svg></span>
               </div>
             </a>
-            <a class="piece-card" href="../products/chair/">
+            <a class="piece-card" href="../products/chair/" data-rooms="playroom study bedroom" data-ages="toddler preschool school">
               <div class="piece-card__media">
                 <img src="../assets/images/ossita-chair.jpg" width="1254" height="1254" alt="A child-sized wooden chair with a pale green upholstered seat." loading="lazy">
                 <span class="piece-card__badge"><svg class="icon" aria-hidden="true"><use href="#ic-chair"></use></svg></span>
@@ -129,7 +148,7 @@
                 <span class="piece-card__link">View piece <svg class="icon" aria-hidden="true"><use href="#ic-arrow"></use></svg></span>
               </div>
             </a>
-            <a class="piece-card" href="../products/toddler-tower/">
+            <a class="piece-card" href="../products/toddler-tower/" data-rooms="kitchen" data-ages="toddler preschool">
               <div class="piece-card__media">
                 <img src="../assets/images/ossita-toddler-tower.jpg" width="1254" height="1254" alt="A light-wood toddler tower with a step platform and sage guard rail." loading="lazy">
                 <span class="piece-card__badge"><svg class="icon" aria-hidden="true"><use href="#ic-tower"></use></svg></span>
@@ -142,7 +161,7 @@
                 <span class="piece-card__link">View piece <svg class="icon" aria-hidden="true"><use href="#ic-arrow"></use></svg></span>
               </div>
             </a>
-            <a class="piece-card" href="../products/bookshelf/">
+            <a class="piece-card" href="../products/bookshelf/" data-rooms="nursery playroom study bedroom" data-ages="toddler preschool school">
               <div class="piece-card__media">
                 <img src="../assets/images/ossita-bookshelf.jpg" width="1254" height="1254" alt="A low rounded wooden bookshelf with front-facing books and storage bins." loading="lazy">
                 <span class="piece-card__badge"><svg class="icon" aria-hidden="true"><use href="#ic-book"></use></svg></span>
@@ -155,7 +174,7 @@
                 <span class="piece-card__link">View piece <svg class="icon" aria-hidden="true"><use href="#ic-arrow"></use></svg></span>
               </div>
             </a>
-            <a class="piece-card" href="../products/low-table/">
+            <a class="piece-card" href="../products/low-table/" data-rooms="playroom study bedroom" data-ages="preschool school">
               <div class="piece-card__media">
                 <img src="../assets/images/ossita-low-table.jpg" width="1254" height="1254" alt="A low rounded wooden activity table with blocks and crayons." loading="lazy">
                 <span class="piece-card__badge"><svg class="icon" aria-hidden="true"><use href="#ic-table"></use></svg></span>
@@ -168,7 +187,7 @@
                 <span class="piece-card__link">View piece <svg class="icon" aria-hidden="true"><use href="#ic-arrow"></use></svg></span>
               </div>
             </a>
-            <a class="piece-card" href="../products/storage-bench/">
+            <a class="piece-card" href="../products/storage-bench/" data-rooms="nursery playroom bedroom" data-ages="toddler preschool school">
               <div class="piece-card__media">
                 <img src="../assets/images/ossita-storage.jpg" width="920" height="920" alt="A low wooden storage bench with colorful bins and open compartments." loading="lazy">
                 <span class="piece-card__badge"><svg class="icon" aria-hidden="true"><use href="#ic-bench"></use></svg></span>
@@ -181,7 +200,7 @@
                 <span class="piece-card__link">View piece <svg class="icon" aria-hidden="true"><use href="#ic-arrow"></use></svg></span>
               </div>
             </a>
-            <a class="piece-card" href="../products/toy-trolley/">
+            <a class="piece-card" href="../products/toy-trolley/" data-rooms="nursery playroom bedroom" data-ages="toddler preschool">
               <div class="piece-card__media">
                 <img src="../assets/images/ossita-storage.jpg" width="920" height="920" alt="A light-wood rolling toy box on casters in a tidy playroom." loading="lazy">
                 <span class="piece-card__badge"><svg class="icon" aria-hidden="true"><use href="#ic-trolley"></use></svg></span>
@@ -194,7 +213,7 @@
                 <span class="piece-card__link">View piece <svg class="icon" aria-hidden="true"><use href="#ic-arrow"></use></svg></span>
               </div>
             </a>
-            <a class="piece-card" href="../products/study-desk/">
+            <a class="piece-card" href="../products/study-desk/" data-rooms="study bedroom" data-ages="school">
               <div class="piece-card__media">
                 <img src="../assets/images/ossita-study-desk.jpg" width="920" height="920" alt="A child-sized wooden desk with shelves, colored drawers, and a matching chair." loading="lazy">
                 <span class="piece-card__badge"><svg class="icon" aria-hidden="true"><use href="#ic-desk"></use></svg></span>
@@ -208,6 +227,7 @@
               </div>
             </a>
           </div>
+          <p class="catalogue__empty" data-piece-empty hidden>No pieces match this room and age.</p>
         </div>
       </section>
 
@@ -280,7 +300,52 @@
         </div>
       </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-    <script src="../assets/js/site.js" defer></script>
-  </body>
-</html>
+	    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+	    <script src="../assets/js/site.js" defer></script>
+	    <script>
+	      (() => {
+	        const controls = document.querySelector(".quick-sort");
+	        const cards = Array.from(document.querySelectorAll("[data-piece-grid] .piece-card"));
+	        const count = document.querySelector(".quick-sort__count");
+	        const empty = document.querySelector("[data-piece-empty]");
+	        const filters = { room: "all", age: "all" };
+
+	        if (!controls || cards.length === 0) return;
+
+	        const matches = (card, group) => {
+	          const value = filters[group];
+	          if (value === "all") return true;
+	          const key = group === "room" ? "rooms" : "ages";
+	          return (card.dataset[key] || "").split(" ").includes(value);
+	        };
+
+	        const updateCards = () => {
+	          let visible = 0;
+	          cards.forEach((card) => {
+	            const show = matches(card, "room") && matches(card, "age");
+	            card.hidden = !show;
+	            if (show) visible += 1;
+	          });
+	          count.textContent = `Showing ${visible} ${visible === 1 ? "piece" : "pieces"}`;
+	          empty.hidden = visible !== 0;
+	        };
+
+	        controls.addEventListener("click", (event) => {
+	          const button = event.target.closest("[data-filter-group]");
+	          if (!button) return;
+
+	          const group = button.dataset.filterGroup;
+	          filters[group] = button.dataset.filterValue;
+
+	          controls.querySelectorAll(`[data-filter-group="${group}"]`).forEach((control) => {
+	            const active = control === button;
+	            control.classList.toggle("is-active", active);
+	            control.setAttribute("aria-pressed", String(active));
+	          });
+
+	          updateCards();
+	        });
+	      })();
+	    </script>
+	  </body>
+	</html>
