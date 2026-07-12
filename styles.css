@@ -783,6 +783,90 @@ h4 {
 }
 
 /* =========================================================
+   Shop by age
+   ========================================================= */
+.age-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+
+.age-card {
+  display: grid;
+  align-content: start;
+  gap: 12px;
+  min-height: 100%;
+  padding: clamp(22px, 3vw, 30px);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background:
+    linear-gradient(180deg, rgba(255, 253, 248, 0.98), rgba(248, 243, 236, 0.94));
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.age-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--oak);
+  box-shadow: var(--shadow-md);
+}
+
+.age-card__icon {
+  display: grid;
+  place-items: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 16px;
+  background: var(--tint-sage);
+  color: var(--sage-deep);
+  font-size: 1.55rem;
+}
+
+.age-card:nth-child(2) .age-card__icon,
+.age-card:nth-child(4) .age-card__icon {
+  background: var(--tint-sand);
+  color: var(--clay-deep);
+}
+
+.age-card__range {
+  color: var(--clay-deep);
+  font-size: 0.76rem;
+  font-weight: 750;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.age-card h3 {
+  font-size: clamp(1.35rem, 2vw, 1.7rem);
+}
+
+.age-card > p:not(.age-card__range) {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.age-card__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  margin-top: auto;
+  padding-top: 8px;
+  color: var(--charcoal);
+  font-size: 0.9rem;
+  font-weight: 650;
+}
+
+.age-card__link .icon {
+  color: var(--clay);
+  font-size: 1.08rem;
+  transition: transform 0.2s ease;
+}
+
+.age-card:hover .age-card__link .icon {
+  transform: translateX(4px);
+}
+
+/* =========================================================
    Craft / materials
    ========================================================= */
 .craft__grid {
@@ -1673,7 +1757,8 @@ h4 {
    ========================================================= */
 @media (max-width: 1080px) {
   .pillars__grid,
-  .catalogue__grid {
+  .catalogue__grid,
+  .age-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -1793,6 +1878,7 @@ h4 {
 
   .pillars__grid,
   .catalogue__grid,
+  .age-grid,
   .panel-grid,
   .collections__grid,
   .product-gallery__grid,
