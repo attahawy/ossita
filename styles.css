@@ -1494,15 +1494,10 @@ h4 {
   justify-self: center;
   align-self: center;
   display: grid;
-  gap: 20px;
+  gap: 22px;
   align-content: start;
   width: min(100% - (var(--gutter) * 2), 620px);
   margin-block: var(--hero-copy-padding-block);
-  padding: clamp(26px, 3vw, 38px);
-  border: 1px solid var(--line);
-  border-radius: var(--radius);
-  background: var(--milk);
-  box-shadow: var(--shadow-md);
 }
 
 .product-hero__panel h1 {
@@ -1596,6 +1591,24 @@ h4 {
   height: auto;
 }
 
+.product-figure--detail img,
+.product-figure--wide img,
+.product-figure--tall img {
+  object-fit: cover;
+}
+
+.product-figure--detail img {
+  aspect-ratio: 4 / 3;
+}
+
+.product-figure--wide img {
+  aspect-ratio: 16 / 10;
+}
+
+.product-figure--tall img {
+  aspect-ratio: 4 / 5;
+}
+
 .product-figure figcaption {
   padding: 15px 18px 17px;
   color: var(--muted);
@@ -1604,36 +1617,24 @@ h4 {
 
 /* Detail grid */
 .detail-section {
-  padding-block: clamp(34px, 5vw, 68px);
+  padding-block: clamp(30px, 4vw, 56px);
 }
 
 .detail-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: clamp(16px, 2vw, 24px);
+  gap: 18px;
 }
 
 .detail {
-  position: relative;
   display: grid;
-  gap: 12px;
+  gap: 11px;
   align-content: start;
-  min-height: 100%;
-  padding: clamp(26px, 3vw, 34px);
+  padding: 28px 26px 30px;
   border: 1px solid var(--line);
-  border-radius: var(--radius-sm);
-  background:
-    linear-gradient(180deg, rgba(255, 253, 248, 0.98), rgba(248, 243, 236, 0.9));
+  border-radius: var(--radius);
+  background: var(--milk);
   box-shadow: var(--shadow-sm);
-  overflow: hidden;
-}
-
-.detail::before {
-  content: "";
-  position: absolute;
-  inset: 0 0 auto;
-  height: 4px;
-  background: linear-gradient(90deg, var(--sage), var(--clay));
 }
 
 .detail__icon {
@@ -1645,12 +1646,11 @@ h4 {
   background: var(--tint-sage);
   color: var(--sage-deep);
   font-size: 1.5rem;
-  margin-bottom: 8px;
+  margin-bottom: 4px;
 }
 
 .detail h3 {
-  max-width: 14ch;
-  font-size: clamp(1.35rem, 2vw, 1.75rem);
+  font-size: 1.35rem;
 }
 
 .detail p {
@@ -1659,18 +1659,15 @@ h4 {
 }
 
 .note {
-  position: relative;
   display: grid;
   grid-template-columns: auto 1fr;
-  gap: clamp(16px, 2vw, 22px);
-  align-items: center;
-  margin-top: clamp(16px, 2vw, 24px);
-  padding: clamp(24px, 3vw, 34px);
-  border: 1px solid var(--line);
-  border-left: 6px solid var(--clay);
-  border-radius: var(--radius-sm);
-  background: var(--milk);
-  box-shadow: var(--shadow-sm);
+  gap: 18px;
+  align-items: start;
+  margin-top: 18px;
+  padding: 26px 28px;
+  border: 1px dashed var(--line-strong);
+  border-radius: var(--radius);
+  background: rgba(255, 253, 248, 0.6);
 }
 
 .note__icon {
