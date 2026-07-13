@@ -1257,6 +1257,75 @@ h4 {
   font-size: 0.98rem;
 }
 
+.award-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.award-card {
+  display: grid;
+  gap: 16px;
+  align-content: start;
+  min-height: 100%;
+  padding: clamp(26px, 3vw, 36px);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background:
+    linear-gradient(180deg, rgba(255, 253, 248, 0.98), rgba(248, 243, 236, 0.94));
+  box-shadow: var(--shadow-sm);
+}
+
+.award-card__mark {
+  display: grid;
+  place-items: center;
+  width: 76px;
+  height: 76px;
+  border: 1px solid rgba(109, 125, 97, 0.26);
+  border-radius: 50%;
+  background: var(--tint-sage);
+  color: var(--sage-deep);
+  font-family: var(--serif);
+  font-size: 1.65rem;
+  line-height: 1;
+}
+
+.award-card:nth-child(2) .award-card__mark {
+  border-color: rgba(185, 102, 63, 0.22);
+  background: var(--tint-clay);
+  color: var(--clay-deep);
+}
+
+.award-card:nth-child(3) .award-card__mark {
+  border-color: rgba(154, 123, 69, 0.24);
+  background: #efe7d7;
+  color: #8b6c3c;
+}
+
+.award-card h3 {
+  font-size: 1.55rem;
+}
+
+.award-card p {
+  color: var(--muted);
+  font-size: 0.98rem;
+}
+
+.award-card__detail {
+  display: inline-flex;
+  width: fit-content;
+  min-height: 30px;
+  align-items: center;
+  padding: 5px 12px;
+  border-radius: 999px;
+  background: rgba(255, 253, 248, 0.76);
+  color: var(--charcoal);
+  font-size: 0.78rem;
+  font-weight: 750;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
 .contact-link {
   color: inherit;
   text-decoration: none;
@@ -2145,6 +2214,7 @@ h4 {
   }
 
   .panel-grid,
+  .award-grid,
   .collections__grid,
   .detail-grid,
   .related__grid,
@@ -2199,6 +2269,7 @@ h4 {
   .catalogue__grid,
   .age-grid,
   .panel-grid,
+  .award-grid,
   .collections__grid,
   .detail-grid,
   .related__grid,
