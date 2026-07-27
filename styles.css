@@ -338,6 +338,14 @@ h4 {
   color: var(--charcoal);
 }
 
+.brand-mark--image {
+  width: 56px;
+  height: 56px;
+  flex: none;
+  object-fit: contain;
+  mix-blend-mode: multiply;
+}
+
 .site-nav {
   display: flex;
   min-width: 0;
@@ -400,8 +408,9 @@ h4 {
     pointer-events: auto;
   }
 
-  .brand--center .brand-mark {
-    font-size: 2.795rem;
+  .brand--center .brand-mark--image {
+    width: 68px;
+    height: 68px;
   }
 
   .site-nav {
@@ -1448,6 +1457,13 @@ h4 {
 .footer-brand__logo .brand-mark {
   font-size: 1.7rem;
   color: var(--milk);
+}
+
+.footer-brand__logo .brand-mark--image {
+  width: 58px;
+  height: 58px;
+  filter: invert(1);
+  mix-blend-mode: screen;
 }
 
 .footer-brand p {
