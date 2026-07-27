@@ -416,7 +416,7 @@ h4 {
   .site-nav {
     flex-direction: column;
     gap: 2px;
-    padding-top: 54px;
+    padding-top: 68px;
   }
 
   .site-nav__group {
@@ -506,9 +506,13 @@ h4 {
   z-index: 1;
   display: grid;
   align-content: center;
+  justify-items: center;
   gap: 22px;
+  width: 100%;
   max-width: 540px;
+  min-width: 0;
   padding-block: var(--hero-copy-padding-block);
+  text-align: center;
 }
 
 .hero__inner::before {
@@ -531,11 +535,13 @@ h4 {
   font-size: clamp(1.15rem, 2.4vw, 1.5rem);
   font-family: var(--serif);
   font-style: italic;
+  margin-inline: auto;
 }
 
 .hero__values {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 10px;
   margin-top: 2px;
 }
@@ -561,6 +567,7 @@ h4 {
 .hero__cta {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 12px;
   margin-top: 8px;
 }
@@ -1541,6 +1548,11 @@ h4 {
   justify-self: center;
   width: min(100% - (var(--gutter) * 2), 620px);
   padding-block: var(--hero-copy-padding-block);
+  text-align: center;
+}
+
+.page-hero__text > .eyebrow {
+  justify-self: center;
 }
 
 .page-hero__title {
@@ -1551,6 +1563,7 @@ h4 {
 .page-hero__actions {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 12px;
   margin-top: 6px;
 }
@@ -1645,6 +1658,7 @@ h4 {
   align-content: start;
   width: min(100% - (var(--gutter) * 2), 620px);
   margin-block: var(--hero-copy-padding-block);
+  text-align: center;
 }
 
 .product-hero__panel h1 {
@@ -1660,6 +1674,7 @@ h4 {
 .chip-row {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 8px;
 }
 
@@ -1678,6 +1693,7 @@ h4 {
   border: 1px solid var(--line);
   border-radius: var(--radius-sm);
   background: var(--tint-sand);
+  text-align: left;
 }
 
 .spec__icon {
@@ -1708,6 +1724,7 @@ h4 {
 .product-hero__cta {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 12px;
 }
 
