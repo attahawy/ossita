@@ -416,7 +416,7 @@ h4 {
   .site-nav {
     flex-direction: column;
     gap: 2px;
-    padding-top: 68px;
+    padding-top: 82px;
   }
 
   .site-nav__group {
