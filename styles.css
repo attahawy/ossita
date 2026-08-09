@@ -372,6 +372,15 @@ h4 {
   font-weight: 550;
 }
 
+.site-header .nav-link .icon {
+  margin-right: 0.35rem;
+}
+
+.site-header .nav-link .icon--solid {
+  fill: currentColor;
+  stroke: none;
+}
+
 .site-header .nav-link:hover,
 .site-header .nav-link:focus-visible,
 .site-header .nav-link.active {
