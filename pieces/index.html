@@ -21,7 +21,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="../styles.css">
   </head>
-  <body class="product-page">
+  <body class="product-page pieces-page">
     <svg class="icon-sprite" width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute">
       <defs>
         <symbol id="ic-leaf" viewBox="0 0 24 24"><path d="M4 20c9 1 15-4 15-15C10 4 4 10 4 20Z"/><path d="M4 20c2-6 5-9 11-11"/></symbol>
@@ -64,7 +64,6 @@
               <li class="nav-item"><a class="nav-link active" href="../pieces/" aria-current="page">Pieces</a></li>
               <li class="nav-item"><a class="nav-link" href="../rooms/">Rooms</a></li>
               <li class="nav-item"><a class="nav-link" href="../collections/">Collections</a></li>
-              <li class="nav-item"><a class="nav-link" href="../#shop-by-age">Shop by age</a></li>
             </ul>
             <ul class="navbar-nav site-nav__group site-nav__group--right mb-0">
               <li class="nav-item"><a class="nav-link" href="../care/"><svg class="icon icon--solid" aria-hidden="true"><use href="#ic-heart-solid"></use></svg>Care</a></li>
@@ -75,30 +74,11 @@
     </header>
 
     <main id="top">
-      <section class="page-hero">
-        <div class="container page-hero__grid">
-          <div class="page-hero__text">
-            <p class="eyebrow"><svg class="icon" aria-hidden="true"><use href="#ic-sparkle"></use></svg>Pieces</p>
-            <h1 class="page-hero__title">Single pieces for growing rooms.</h1>
-            <p class="lede">
-              Choose from child-height furniture made for sleep, study, storage, kitchen routines, and open-ended play.
-            </p>
-            <div class="page-hero__actions">
-              <a class="btn btn--primary" href="../rooms/">Plan a room <svg class="icon" aria-hidden="true"><use href="#ic-arrow"></use></svg></a>
-              <a class="btn btn--ghost" href="../collections/">See collections</a>
-            </div>
-          </div>
-          <div class="page-hero__media">
-            <img src="../assets/images/ossita-low-table.jpg" width="1254" height="1254" alt="A rounded low table with child-sized chairs in a calm kids room.">
-          </div>
-        </div>
-      </section>
-
       <section class="section section--tint-sage" aria-labelledby="catalogue-title">
         <div class="container">
           <div class="section__head">
             <p class="eyebrow"><svg class="icon" aria-hidden="true"><use href="#ic-blocks"></use></svg>Catalogue</p>
-            <h2 id="catalogue-title" class="section__title">Room-ready pieces with clear everyday uses.</h2>
+            <h1 id="catalogue-title" class="section__title">Room-ready pieces with clear everyday uses.</h1>
             <p class="section__intro">
               Each piece has its own page with room use, material notes, and nearby pieces in the range.
             </p>
@@ -120,7 +100,7 @@
               <button class="quick-sort__button" type="button" data-filter-group="age" data-filter-value="preschool" aria-pressed="false">3+</button>
               <button class="quick-sort__button" type="button" data-filter-group="age" data-filter-value="school" aria-pressed="false">5+</button>
             </div>
-            <p class="quick-sort__count" aria-live="polite">Showing 8 pieces</p>
+            <p class="quick-sort__count" aria-live="polite">Showing 11 pieces</p>
           </div>
           <div class="catalogue__grid" data-piece-grid>
             <a class="piece-card" href="../products/newborn-bed/" data-rooms="nursery bedroom" data-ages="baby">
@@ -136,7 +116,7 @@
                 <span class="piece-card__link">View piece <svg class="icon" aria-hidden="true"><use href="#ic-arrow"></use></svg></span>
               </div>
             </a>
-            <a class="piece-card" href="../products/chair/" data-rooms="playroom study bedroom" data-ages="toddler preschool school">
+            <a class="piece-card" href="../products/chair/" data-rooms="playroom study bedroom" data-ages="toddler">
               <div class="piece-card__media">
                 <img src="../assets/images/ossita-chair.jpg" width="1254" height="1254" alt="A child-sized wooden chair with a pale green upholstered seat." loading="lazy">
                 <span class="piece-card__badge"><svg class="icon" aria-hidden="true"><use href="#ic-chair"></use></svg></span>
@@ -149,7 +129,7 @@
                 <span class="piece-card__link">View piece <svg class="icon" aria-hidden="true"><use href="#ic-arrow"></use></svg></span>
               </div>
             </a>
-            <a class="piece-card" href="../products/toddler-tower/" data-rooms="kitchen" data-ages="toddler preschool">
+            <a class="piece-card" href="../products/toddler-tower/" data-rooms="kitchen" data-ages="toddler">
               <div class="piece-card__media">
                 <img src="../assets/images/ossita-toddler-tower.jpg" width="1254" height="1254" alt="A light-wood toddler tower with a step platform and sage guard rail." loading="lazy">
                 <span class="piece-card__badge"><svg class="icon" aria-hidden="true"><use href="#ic-tower"></use></svg></span>
@@ -162,52 +142,52 @@
                 <span class="piece-card__link">View piece <svg class="icon" aria-hidden="true"><use href="#ic-arrow"></use></svg></span>
               </div>
             </a>
-            <a class="piece-card" href="../products/bookshelf/" data-rooms="nursery playroom study bedroom" data-ages="toddler preschool school">
+            <a class="piece-card" href="../products/bookshelf/" data-rooms="nursery playroom study bedroom" data-ages="preschool">
               <div class="piece-card__media">
                 <img src="../assets/images/ossita-bookshelf.jpg" width="1254" height="1254" alt="A low rounded wooden bookshelf with front-facing books and storage bins." loading="lazy">
                 <span class="piece-card__badge"><svg class="icon" aria-hidden="true"><use href="#ic-book"></use></svg></span>
               </div>
               <div class="piece-card__body">
-                <div class="piece-card__top"><p class="kicker">Reading</p><span class="piece-card__code">BS-04</span></div>
+                <div class="piece-card__top"><p class="kicker">3+ years</p><span class="piece-card__code">BS-04</span></div>
                 <h3>Bookshelf</h3>
                 <p>Forward-facing book storage that keeps covers visible and easy to reach at floor level.</p>
                 <ul class="tag-row"><li class="tag">Front display</li><li class="tag">Low reach</li></ul>
                 <span class="piece-card__link">View piece <svg class="icon" aria-hidden="true"><use href="#ic-arrow"></use></svg></span>
               </div>
             </a>
-            <a class="piece-card" href="../products/low-table/" data-rooms="playroom study bedroom" data-ages="preschool school">
+            <a class="piece-card" href="../products/low-table/" data-rooms="playroom study bedroom" data-ages="preschool">
               <div class="piece-card__media">
                 <img src="../assets/images/ossita-low-table.jpg" width="1254" height="1254" alt="A low rounded wooden activity table with blocks and crayons." loading="lazy">
                 <span class="piece-card__badge"><svg class="icon" aria-hidden="true"><use href="#ic-table"></use></svg></span>
               </div>
               <div class="piece-card__body">
-                <div class="piece-card__top"><p class="kicker">Play</p><span class="piece-card__code">LT-05</span></div>
+                <div class="piece-card__top"><p class="kicker">3+ years</p><span class="piece-card__code">LT-05</span></div>
                 <h3>Low table</h3>
                 <p>A rounded shared surface sized for drawing, snacks, blocks, and open-ended floor play.</p>
                 <ul class="tag-row"><li class="tag">Shared surface</li><li class="tag">Soft corners</li></ul>
                 <span class="piece-card__link">View piece <svg class="icon" aria-hidden="true"><use href="#ic-arrow"></use></svg></span>
               </div>
             </a>
-            <a class="piece-card" href="../products/storage-bench/" data-rooms="nursery playroom bedroom" data-ages="toddler preschool school">
+            <a class="piece-card" href="../products/storage-bench/" data-rooms="nursery playroom bedroom" data-ages="preschool">
               <div class="piece-card__media">
                 <img src="../assets/images/ossita-storage.jpg" width="920" height="920" alt="A low wooden storage bench with colorful bins and open compartments." loading="lazy">
                 <span class="piece-card__badge"><svg class="icon" aria-hidden="true"><use href="#ic-bench"></use></svg></span>
               </div>
               <div class="piece-card__body">
-                <div class="piece-card__top"><p class="kicker">Store</p><span class="piece-card__code">SB-06</span></div>
+                <div class="piece-card__top"><p class="kicker">3+ years</p><span class="piece-card__code">SB-06</span></div>
                 <h3>Storage bench</h3>
                 <p>A bench with visible cubbies below, balancing sitting space and fast clean-up access.</p>
                 <ul class="tag-row"><li class="tag">Bench seat</li><li class="tag">Open cubbies</li></ul>
                 <span class="piece-card__link">View piece <svg class="icon" aria-hidden="true"><use href="#ic-arrow"></use></svg></span>
               </div>
             </a>
-            <a class="piece-card" href="../products/toy-trolley/" data-rooms="nursery playroom bedroom" data-ages="toddler preschool">
+            <a class="piece-card" href="../products/toy-trolley/" data-rooms="nursery playroom bedroom" data-ages="toddler">
               <div class="piece-card__media">
                 <img src="../assets/images/ossita-storage.jpg" width="920" height="920" alt="A light-wood rolling toy box on casters in a tidy playroom." loading="lazy">
                 <span class="piece-card__badge"><svg class="icon" aria-hidden="true"><use href="#ic-trolley"></use></svg></span>
               </div>
               <div class="piece-card__body">
-                <div class="piece-card__top"><p class="kicker">Move</p><span class="piece-card__code">TR-07</span></div>
+                <div class="piece-card__top"><p class="kicker">18+ months</p><span class="piece-card__code">TR-07</span></div>
                 <h3>Toy trolley</h3>
                 <p>Rolling storage for blocks, plush toys, and in-room resets that happen several times a day.</p>
                 <ul class="tag-row"><li class="tag">Rolling base</li><li class="tag">Open top</li></ul>
@@ -220,15 +200,53 @@
                 <span class="piece-card__badge"><svg class="icon" aria-hidden="true"><use href="#ic-desk"></use></svg></span>
               </div>
               <div class="piece-card__body">
-                <div class="piece-card__top"><p class="kicker">Focus</p><span class="piece-card__code">SD-08</span></div>
+                <div class="piece-card__top"><p class="kicker">5+ years</p><span class="piece-card__code">SD-08</span></div>
                 <h3>Study desk</h3>
                 <p>A compact workstation with shelf storage, drawers, and a calm footprint for creative work.</p>
                 <ul class="tag-row"><li class="tag">Upper shelf</li><li class="tag">Drawer storage</li></ul>
                 <span class="piece-card__link">View piece <svg class="icon" aria-hidden="true"><use href="#ic-arrow"></use></svg></span>
               </div>
             </a>
+            <article class="piece-card" data-rooms="nursery playroom study kitchen" data-ages="baby toddler preschool school">
+              <div class="piece-card__media">
+                <img src="../assets/images/ossita-bookshelf.jpg" width="1254" height="1254" alt="A low rounded wooden shelf with front-facing books and storage bins." loading="lazy">
+                <span class="piece-card__badge"><svg class="icon" aria-hidden="true"><use href="#ic-book"></use></svg></span>
+              </div>
+              <div class="piece-card__body">
+                <div class="piece-card__top"><p class="kicker">Concept piece</p><span class="piece-card__code">DM-01</span></div>
+                <h3>Everyday shelf</h3>
+                <p>A flexible low shelf placeholder for books, baskets, supplies, and daily essentials.</p>
+                <ul class="tag-row"><li class="tag">All rooms</li><li class="tag">All ages</li></ul>
+                <span class="piece-card__link">Coming soon</span>
+              </div>
+            </article>
+            <article class="piece-card" data-rooms="nursery playroom study kitchen" data-ages="baby toddler preschool school">
+              <div class="piece-card__media">
+                <img src="../assets/images/ossita-chair.jpg" width="1254" height="1254" alt="A child-sized wooden chair with a pale green upholstered seat." loading="lazy">
+                <span class="piece-card__badge"><svg class="icon" aria-hidden="true"><use href="#ic-chair"></use></svg></span>
+              </div>
+              <div class="piece-card__body">
+                <div class="piece-card__top"><p class="kicker">Concept piece</p><span class="piece-card__code">DM-02</span></div>
+                <h3>Growing stool</h3>
+                <p>A compact adaptable seat placeholder for supervised routines throughout the home.</p>
+                <ul class="tag-row"><li class="tag">All rooms</li><li class="tag">All ages</li></ul>
+                <span class="piece-card__link">Coming soon</span>
+              </div>
+            </article>
+            <article class="piece-card" data-rooms="nursery playroom study kitchen" data-ages="baby toddler preschool school">
+              <div class="piece-card__media">
+                <img src="../assets/images/ossita-storage.jpg" width="920" height="920" alt="Low wooden storage furniture with colorful bins and open compartments." loading="lazy">
+                <span class="piece-card__badge"><svg class="icon" aria-hidden="true"><use href="#ic-bench"></use></svg></span>
+              </div>
+              <div class="piece-card__body">
+                <div class="piece-card__top"><p class="kicker">Concept piece</p><span class="piece-card__code">DM-03</span></div>
+                <h3>Flexible cubby</h3>
+                <p>An open-storage placeholder designed to keep changing everyday items within easy reach.</p>
+                <ul class="tag-row"><li class="tag">All rooms</li><li class="tag">All ages</li></ul>
+                <span class="piece-card__link">Coming soon</span>
+              </div>
+            </article>
           </div>
-          <p class="catalogue__empty" data-piece-empty hidden>No pieces match this room and age.</p>
         </div>
       </section>
 
@@ -275,7 +293,6 @@
               <li><a href="../rooms/">Rooms</a></li>
               <li><a href="../collections/">Collections</a></li>
               <li><a href="../institutions/">Schools & nurseries</a></li>
-              <li><a href="../#shop-by-age">Shop by age</a></li>
             </ul>
           </div>
           <div class="footer-col">
@@ -306,7 +323,6 @@
 	        const controls = document.querySelector(".quick-sort");
 	        const cards = Array.from(document.querySelectorAll("[data-piece-grid] .piece-card"));
 	        const count = document.querySelector(".quick-sort__count");
-	        const empty = document.querySelector("[data-piece-empty]");
 	        const filters = { room: "all", age: "all" };
 
 	        if (!controls || cards.length === 0) return;
@@ -319,14 +335,13 @@
 	        };
 
 	        const updateCards = () => {
-	          let visible = 0;
+	          const visibleCards = cards.filter((card) => matches(card, "room") && matches(card, "age"));
 	          cards.forEach((card) => {
-	            const show = matches(card, "room") && matches(card, "age");
-	            card.hidden = !show;
-	            if (show) visible += 1;
+	            card.hidden = !visibleCards.includes(card);
 	          });
+
+	          const visible = visibleCards.length;
 	          count.textContent = `Showing ${visible} ${visible === 1 ? "piece" : "pieces"}`;
-	          empty.hidden = visible !== 0;
 	        };
 
 	        controls.addEventListener("click", (event) => {
